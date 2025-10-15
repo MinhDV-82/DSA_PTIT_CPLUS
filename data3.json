@@ -1,0 +1,425 @@
+Server Response: {
+    "id": 813,
+    "name": "Level 12",
+    "config": [
+        {
+            "wave": 1,
+            "rows": 10,
+            "cols": 7,
+            "number": 24,
+            "deadLocks": 0,
+            "group": 3,
+            "mechanics": [],
+            "carItems": [
+                "raptor_grey",
+                "raptor_pink",
+                "chever_green",
+                "chever_blue",
+                "chever_orange"
+            ],
+            "background": "city",
+            "directions": [
+                3,
+                2
+            ],
+            "groupDepth": 2,
+            "mode": "normal",
+            "targetConfigs": [],
+            "luckyCars": [
+                {
+                    "type": "combo",
+                    "config": [
+                        {
+                            "combo": 2,
+                            "ratio": 1
+                        }
+                    ]
+                }
+            ],
+            "timeLimit": 60,
+            "comboTimes": [
+                {
+                    "combo": 1,
+                    "time": 3
+                },
+                {
+                    "combo": 2,
+                    "time": 3
+                },
+                {
+                    "combo": 3,
+                    "time": 5
+                },
+                {
+                    "combo": 4,
+                    "time": 5
+                }
+            ],
+            "booster": {
+                "status": "active"
+            },
+            "slot": {
+                "available": 7,
+                "open": 6,
+                "strategy": 0
+            },
+            "reward": {
+                "primary": 10,
+                "secondary": 3
+            },
+            "obstacleItems": [
+                {
+                    "x": 0,
+                    "y": 7,
+                    "type": "tunnel",
+                    "size": 1,
+                    "direction": "E",
+                    "config": {
+                        "numberOfCar": 3
+                    },
+                    "items": [
+                        {
+                            "x": 0,
+                            "y": 7,
+                            "dir": 2,
+                            "type": 3,
+                            "color": 0,
+                            "id": "chever_blue",
+                            "itemId": "nE4dMehqkQ"
+                        },
+                        {
+                            "x": 0,
+                            "y": 7,
+                            "dir": 2,
+                            "type": 4,
+                            "color": 1,
+                            "id": "chever_orange",
+                            "itemId": "DyNyHjMZYc"
+                        },
+                        {
+                            "x": 0,
+                            "y": 7,
+                            "dir": 2,
+                            "type": 0,
+                            "color": 1,
+                            "id": "raptor_grey",
+                            "itemId": "78rTTF0iTd"
+                        }
+                    ]
+                },
+                {
+                    "x": 0,
+                    "y": 8,
+                    "type": "tunnel",
+                    "size": 1,
+                    "direction": "S",
+                    "config": {
+                        "numberOfCar": 3
+                    },
+                    "items": [
+                        {
+                            "x": 0,
+                            "y": 8,
+                            "dir": 3,
+                            "type": 4,
+                            "color": 0,
+                            "id": "chever_orange",
+                            "itemId": "xcliHSMh86"
+                        },
+                        {
+                            "x": 0,
+                            "y": 8,
+                            "dir": 3,
+                            "type": 2,
+                            "color": 1,
+                            "id": "chever_green",
+                            "itemId": "Zk7jVh2WRc"
+                        },
+                        {
+                            "x": 0,
+                            "y": 8,
+                            "dir": 3,
+                            "type": 1,
+                            "color": 1,
+                            "id": "raptor_pink",
+                            "itemId": "bxMrF4s28t"
+                        }
+                    ]
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "type": "pole",
+                    "size": 1
+                },
+                {
+                    "x": 1,
+                    "y": 0,
+                    "type": "pole",
+                    "size": 1
+                },
+                {
+                    "x": 2,
+                    "y": 0,
+                    "type": "pole",
+                    "size": 1
+                },
+                {
+                    "x": 3,
+                    "y": 0,
+                    "type": "pole",
+                    "size": 1
+                },
+                {
+                    "x": 4,
+                    "y": 0,
+                    "type": "pole",
+                    "size": 1
+                },
+                {
+                    "x": 5,
+                    "y": 0,
+                    "type": "pole",
+                    "size": 1
+                },
+                {
+                    "x": 6,
+                    "y": 0,
+                    "type": "pole",
+                    "size": 1
+                }
+            ],
+            "presetItems": [],
+            "paths": [
+                {
+                    "x": 0,
+                    "y": 6
+                },
+                {
+                    "x": 1,
+                    "y": 6
+                },
+                {
+                    "x": 2,
+                    "y": 6
+                },
+                {
+                    "x": 3,
+                    "y": 6
+                },
+                {
+                    "x": 3,
+                    "y": 7
+                },
+                {
+                    "x": 3,
+                    "y": 8
+                },
+                {
+                    "x": 3,
+                    "y": 9
+                }
+            ],
+            "map": [
+                {
+                    "x": 0,
+                    "y": 1,
+                    "dir": 2,
+                    "type": 2,
+                    "color": 0,
+                    "id": "chever_green"
+                },
+                {
+                    "x": 2,
+                    "y": 1,
+                    "dir": 3,
+                    "type": 4,
+                    "color": 1,
+                    "id": "chever_orange"
+                },
+                {
+                    "x": 3,
+                    "y": 1,
+                    "dir": 2,
+                    "type": 1,
+                    "color": 1,
+                    "id": "raptor_pink"
+                },
+                {
+                    "x": 5,
+                    "y": 1,
+                    "dir": 3,
+                    "type": 0,
+                    "color": 1,
+                    "id": "raptor_grey"
+                },
+                {
+                    "x": 6,
+                    "y": 1,
+                    "dir": 3,
+                    "type": 0,
+                    "color": 0,
+                    "id": "raptor_grey"
+                },
+                {
+                    "x": 0,
+                    "y": 2,
+                    "dir": 2,
+                    "type": 0,
+                    "color": 0,
+                    "id": "raptor_grey"
+                },
+                {
+                    "x": 3,
+                    "y": 2,
+                    "dir": 2,
+                    "type": 3,
+                    "color": 1,
+                    "id": "chever_blue"
+                },
+                {
+                    "x": 1,
+                    "y": 3,
+                    "dir": 2,
+                    "type": 2,
+                    "color": 1,
+                    "id": "chever_green"
+                },
+                {
+                    "x": 3,
+                    "y": 3,
+                    "dir": 2,
+                    "type": 1,
+                    "color": 1,
+                    "id": "raptor_pink"
+                },
+                {
+                    "x": 5,
+                    "y": 3,
+                    "dir": 3,
+                    "type": 3,
+                    "color": 0,
+                    "id": "chever_blue"
+                },
+                {
+                    "x": 6,
+                    "y": 3,
+                    "dir": 3,
+                    "type": 4,
+                    "color": 0,
+                    "id": "chever_orange"
+                },
+                {
+                    "x": 0,
+                    "y": 4,
+                    "dir": 3,
+                    "type": 1,
+                    "color": 0,
+                    "id": "raptor_pink"
+                },
+                {
+                    "x": 1,
+                    "y": 4,
+                    "dir": 3,
+                    "type": 3,
+                    "color": 1,
+                    "id": "chever_blue"
+                },
+                {
+                    "x": 2,
+                    "y": 4,
+                    "dir": 3,
+                    "type": 4,
+                    "color": 0,
+                    "id": "chever_orange"
+                },
+                {
+                    "x": 3,
+                    "y": 4,
+                    "dir": 2,
+                    "type": 0,
+                    "color": 1,
+                    "id": "raptor_grey"
+                },
+                {
+                    "x": 3,
+                    "y": 5,
+                    "dir": 2,
+                    "type": 4,
+                    "color": 1,
+                    "id": "chever_orange"
+                },
+                {
+                    "x": 5,
+                    "y": 5,
+                    "dir": 2,
+                    "type": 0,
+                    "color": 0,
+                    "id": "raptor_grey"
+                },
+                {
+                    "x": 4,
+                    "y": 6,
+                    "dir": 3,
+                    "type": 2,
+                    "color": 0,
+                    "id": "chever_green"
+                },
+                {
+                    "x": 5,
+                    "y": 6,
+                    "dir": 3,
+                    "type": 2,
+                    "color": 0,
+                    "id": "chever_green"
+                },
+                {
+                    "x": 6,
+                    "y": 6,
+                    "dir": 3,
+                    "type": 3,
+                    "color": 0,
+                    "id": "chever_blue"
+                },
+                {
+                    "x": 2,
+                    "y": 8,
+                    "dir": 0,
+                    "type": 3,
+                    "color": 1,
+                    "id": "chever_blue"
+                },
+                {
+                    "x": 4,
+                    "y": 8,
+                    "dir": 3,
+                    "type": 2,
+                    "color": 0,
+                    "id": "chever_green"
+                },
+                {
+                    "x": 5,
+                    "y": 8,
+                    "dir": 3,
+                    "type": 1,
+                    "color": 0,
+                    "id": "raptor_pink"
+                },
+                {
+                    "x": 2,
+                    "y": 9,
+                    "dir": 1,
+                    "type": 1,
+                    "color": 0,
+                    "id": "raptor_pink"
+                }
+            ]
+        }
+    ],
+    "level": 12,
+    "currentSelectedVersion": {
+        "id": 605,
+        "version": 5
+    },
+    "nextHardLevel": 16
+}

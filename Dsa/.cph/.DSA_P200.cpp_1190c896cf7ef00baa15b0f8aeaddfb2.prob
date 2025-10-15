@@ -1,0 +1,1 @@
+{"name":"Local: DSA_P200","url":"c:\\Users\\domin\\Videos\\GiaiBai\\Dsa\\DSA_P200.cpp","tests":[{"id":1755427757157,"input":"\n2\n4\n5 7 1 4\n7\n123 456 100 989 444 111 90","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\domin\\Videos\\GiaiBai\\Dsa\\DSA_P200.cpp","group":"local","local":true}

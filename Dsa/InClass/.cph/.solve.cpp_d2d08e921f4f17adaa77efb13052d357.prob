@@ -1,0 +1,1 @@
+{"name":"Local: solve","url":"c:\\Users\\domin\\Videos\\GiaiBai\\Dsa\\InClass\\solve.cpp","tests":[{"id":1756957752195,"input":"5\nS1 Nam 7.5\nS2 Lan 8.0\nS3 Hung 6.5\nS4 Mai 9.0\nS5 Hoa 7.0\n3\n8.0\n7.0\n5.5\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\domin\\Videos\\GiaiBai\\Dsa\\InClass\\solve.cpp","group":"local","local":true}
