@@ -26,6 +26,8 @@
         "any": "cpp",
         "system_error": "cpp",
         "ratio": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "bitset": "cpp",
+        "algorithm": "cpp"
     }
 }
