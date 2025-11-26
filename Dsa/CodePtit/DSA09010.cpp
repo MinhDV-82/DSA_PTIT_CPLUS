@@ -12,7 +12,7 @@ int const NMAX = 1e6 + 5;
 int a[NMAX];
 int n, k;
 vector<int>adj[100005];
-bool dd[100005];
+bool vis[100005];
 
 void bfs(int start) {
     queue<int>q;
@@ -21,9 +21,9 @@ void bfs(int start) {
     {
         int g = q.front();
         q.pop();
-        dd[g] = true;
+        vis[g] = true;
         for (auto x : adj[g]) {
-            if (dd[x]) continue;
+            if (vis[x]) continue;
             q.push(x);
         }
     }
@@ -34,7 +34,7 @@ void solve() {
     string res = "YES";
     FOR(1, n, i) {
         adj[i].clear();
-        dd[i] = false;
+        vis[i] = false;
     }
     FOR(1, k, i) {
         int x, y;
@@ -43,7 +43,7 @@ void solve() {
     }
     bfs(1);
     FOR(2, n, i) {
-        if (!dd[i]) {
+        if (!vis[i]) {
             res = "NO";
             break;
         }

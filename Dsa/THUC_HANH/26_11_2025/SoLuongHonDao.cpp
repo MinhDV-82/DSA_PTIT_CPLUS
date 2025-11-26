@@ -11,68 +11,67 @@ using namespace std;
     cout.tie(0)
 #define mainCode int main()
 
-int const NMAX = 1e6 + 5;
-int a[NMAX];
-int m, n;
-char ma[505][505];
-bool dd[505][505];
+int n, k;
+bool dd[1005][1005];
+int ma[1005][1005];
 
-bool ok(int i, int j)
+bool isValid(int x, int y)
 {
-    return i >= 1 && i <= m && j >= 1 && j <= n;
+    return x >= 0 && x <= n && y >= 0 && y <= k;
 }
 
 void bfs(pair<int, int> start)
 {
     queue<pair<int, int>> q;
     q.push(start);
-
+     dd[start.first][start.second] = true;
+           
     while (!q.empty())
     {
-        auto pos = q.front();
+        auto p = q.front();
+        int x = p.first;
+        int y = p.second;
+        dd[x][y] = true;
         q.pop();
-        dd[pos.first][pos.second] = true;
-
         for (int i = -1; i <= 1; i++)
         {
             for (int j = -1; j <= 1; j++)
             {
-                if (i == 0 && j == 0)
-                    continue;
-                int nX = pos.first + i;
-                int nY = pos.second + j;
-                if (ok(nX, nY) && ma[nX][nY] == 'W')
+                if (i == 0 && j == 0) continue;
+
+                int nx = x + i;
+                int ny = y + j;
+                if (isValid(nx, ny) && !dd[nx][ny] && ma[nx][ny] == 1)
                 {
-                    if (dd[nX][nY])
-                        continue;
-                    q.push({nX, nY});
-                    dd[nX][nY] = true;
+                    q.push({nx, ny});
+                    dd[nx][ny] = true;
                 }
             }
         }
     }
 }
 
+
 void solve()
 {
-    cin >> m >> n;
-    int res = 0;
-    FOR(1, m, i)
+    cin >> n >> k;
+    FOR(1, n, i)
     {
-        FOR(1, n, j)
+        FOR(1, k, j)
         {
             cin >> ma[i][j];
             dd[i][j] = false;
         }
     }
-    FOR(1, m, i)
+    int res = 0;
+    FOR(1, n, i)
     {
-        FOR(1, n, j)
+        FOR(1, k, j)
         {
-            if (!dd[i][j] && ma[i][j] == 'W')
+            if (!dd[i][j] && ma[i][j] == 1)
             {
-                bfs({i, j});
                 res++;
+                bfs({i, j});
             }
         }
     }
@@ -82,9 +81,9 @@ void solve()
 mainCode
 {
     sp;
-    bool ok = false;
+    bool haveTestcases = true;
     int t = 1;
-    if (ok)
+    if (haveTestcases)
     {
         cin >> t;
     }
