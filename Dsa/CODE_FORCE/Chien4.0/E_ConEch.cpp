@@ -1,0 +1,53 @@
+/* =============== */
+//! solution by : MinhDV-82
+/* =============== */
+#include <bits/stdc++.h>
+using namespace std;
+#define FOR(a, b, i) for (int i = a; i <= b; i++)
+#define FORR(b, a, i) for (int i = b; i >= a; i--)
+#define ll long long
+#define fi first
+#define se second
+#define sp ios_base :: sync_with_stdio(0);cin.tie(0);cout.tie(0)
+#define mainCode int main()
+
+int const NMAX = 1e6 + 5;
+ll a[NMAX];
+int n, k;
+
+void pre() {
+    
+}
+
+ll dp[NMAX];
+
+void solve() {
+    cin >> n >> k;
+    FOR(1, n, i) {
+        cin >> a[i];
+        dp[i] = LONG_MAX;
+    }
+    dp[1] = 0;
+    FOR(2, n, i) {
+        FOR(1, k, j) {
+           if (i - j >= 1) dp[i] = min(dp[i], dp[i - j] + abs(a[i] - a[i - j]));
+        }
+    }
+    multiset<ll>mts;
+    mts.insert(0);
+    
+    cout << dp[n];
+}
+
+mainCode {
+    sp;
+    bool haveTestcases = false;
+    int t = 1;
+    if (haveTestcases) {
+        cin >> t;
+    }
+    pre();
+
+    while(t--)
+        solve();
+}

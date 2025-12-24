@@ -3,40 +3,46 @@ using namespace std;
 #define FOR(a, b, i) for (int i = a; i <= b; i++)
 #define FORR(b, a, i) for (int i = b; i >= a; i--)
 #define ll long long
+#define fi first
+#define se second
 #define sp ios_base :: sync_with_stdio(0);cin.tie(0);cout.tie(0)
 #define mainCode int main()
 
 int const NMAX = 1e6 + 5;
 int a[NMAX];
 int n, k;
-string s;
 
-bool dd[1005];
+int x[15];
+bool dd[15];
 
-void per(int j, string res) {
-    if (j == n) {
-        cout << res << ' ';
+void sinh(int j) {
+    if (j > n) {
+        if (x[n] != k) return;
+        for (int i = 1; i <= n; i++) {
+            cout << x[i] << ' ';
+        }
+        cout << '\n';
         return;
     }
-    for (int i = 0; i < s.size(); i++) {
+    FOR(1, n, i) {
         if (!dd[i]) {
             dd[i] = true;
-            per(j + 1, res + s[i]);
+            x[j] = i;
+            sinh(j + 1);
             dd[i] = false;
         }
     }
+
 }
 
 void solve() {
-    cin >> s;
-    n = s.size();
-    per(0, "");
-    cout << '\n';
+    cin >> n >> k;
+    sinh(1);
 }
 
 mainCode {
     sp;
-    bool haveTestcases = true;
+    bool haveTestcases = false;
     int t = 1;
     if (haveTestcases) {
         cin >> t;

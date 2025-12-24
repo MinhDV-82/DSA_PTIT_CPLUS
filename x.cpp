@@ -28,7 +28,25 @@ bool cmp(const tui &a, const tui &b)
 }
 
 ll s = 0;
-void dequy(ll ) {
+
+map<int, pair<int, int>>mp;
+int numberOfSubArray(std::vector<int> a)
+{
+  int n = a.size();
+  int res = 0;
+  for (int i = -1; i < n; i++) {
+    int s = 0;
+    for (int j = i + 1; j < n; j++) {
+      s += a[j];
+
+      if (j > mp[s].first) {
+        mp[s].second++;
+        mp[s].first = j;
+        res = max(res, mp[s].second);
+      }
+    }
+  }
+  return res;
 
 }
 
