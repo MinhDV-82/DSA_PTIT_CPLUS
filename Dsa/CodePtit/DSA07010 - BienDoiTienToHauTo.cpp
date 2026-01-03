@@ -1,0 +1,67 @@
+/* =============== */
+//! solution by : MinhDV-82
+/* =============== */
+#include <bits/stdc++.h>
+using namespace std;
+#define FOR(a, b, i) for (int i = a; i <= b; i++)
+#define FORR(b, a, i) for (int i = b; i >= a; i--)
+#define ll long long
+#define fi first
+#define se second
+#define sp ios_base :: sync_with_stdio(0);cin.tie(0);cout.tie(0)
+#define mainCode int main()
+
+int const NMAX = 1e6 + 5;
+int a[NMAX];
+int n, k;
+
+void pre() {
+    
+}
+
+bool isOp(char x) {
+    char m[4] = {'+', '-', '*', '/'};
+    for (auto c : m) {
+        if (c == x) {
+            return true;
+        }
+    }
+    return false;
+}
+
+void solve() {
+    string s;
+    cin >> s;
+    stack<string>st;
+    for (int i = s.size() - 1; i >= 0; i--) {
+        if (!isOp(s[i])) {
+            st.push(string(1, s[i]));
+        }
+        else {
+            string x = st.top();st.pop();
+            string y = st.top();st.pop();
+            st.push(s[i] + y + x );
+        }
+    }
+    string res = "";
+    while(!st.empty()) {
+        res += st.top();
+        st.pop();
+    }
+    reverse(res.begin(), res.end());
+    cout << res << '\n';
+
+}
+
+mainCode {
+    sp;
+    bool haveTestcases = true;
+    int t = 1;
+    if (haveTestcases) {
+        cin >> t;
+    }
+    pre();
+
+    while(t--)
+        solve();
+} 

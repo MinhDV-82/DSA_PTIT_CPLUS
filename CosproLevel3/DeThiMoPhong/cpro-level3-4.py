@@ -1,0 +1,1 @@
+print(r"Python:\test") # them r de in ra ky tu dac biet nhu \t \n khong bi bien doi
